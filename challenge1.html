@@ -1,28 +1,64 @@
 <!#DOCTYPE html>
 <html lang="EN">
     <head>
-        <meta charset="UTF-8" name="viewport" />
-        <meta content="width=width-device initial-scale=1.0"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Challenge Alura 1 ~Encriptador~</title>
         <link rel="stylesheet" href="./styles.css" />
     </head>
-    <body>
+    <body class="d-md-flex flex-md-row">
+        <div class="principal d-flex flex-column">
+            <header>
         <img class="logo" src="./assets/Vectorlogo.png" alt="alura-logo" />
-        <input class="input-texto" name="text" type="text" placeholder="Inserte el texto aqui" />
-        <span class="aviso">Solo letras mayusculas y sin acentos.</span>
-        <section class="area-btns">
-            <button class="btn-encriptar" type="submit"> Encriptar</button>
-            <button class="btn-desencriptar" type="submit"> Desencriptar</button>
-        </section>
-        <div class="area-texto">
-            <div class="img-muñeco">
-            <img class="muñeco" src="./assets/Muñecomono.png" alt="muñecon" />
+            </header>
+            <div>
+                <input id="entrada" class="flex-grow" type="text" placeholder="Inserte el texto aqui" />
             </div>
-            <div class="textos">
-            <span class="texto1">Ningun mensaje fue encontrado</span>
-            <span class="texto2">Ingresa el texto que desees encriptar o desencriptar.</span>
+            <div class="controles">
+            <div class="advertencia d-felx">
+                <span class="icon-info"></span><small>Solo letras mayusculas y sin acentos.</small>
             </div>
-            <textarea class="texto"></textarea>
+            <div class="d-flex flex-column flex-sm-row">
+                <button class="button flex-sm-grow" type="submit"> Encriptar</button>
+                <button class="button flex-sm-grow" type="submit"> Desencriptar</button>
             </div>
+            </div>
+        </div>
+        <div class="barra-lateral d-flex flex-column">
+            <div class="info d-flex flex-column flex-grow">
+                <div class="info-img d-none d-md-block">
+                    <img src="./assets/Muñecomono.png" alt="muñecon" />
+                </div>
+                <div class="info-txt my-auto">
+                    <strong>Ningun mensaje fue encontrado</strong><br />
+                    <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                </div>
+            </div>
+            <div class="salida"></div>
+            <input type="button" class="button copiar" onclick="" value="Copiar" />
+        </div>
+        <script src=""></script>
     </body>
+    <footer id="contacto">
+        <div class="contfooter footer-content">
+
+            <div class="contact-us">
+                <h2 class="brand">Hisahito</h2>
+                <p>Victor Isai Morales Ceja</p>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/hisahito" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hisahito/" target="_blank"
+                    class="social-media-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="mailto:hisahito706@gmail.com" class="social-media-icon">
+                    <i class='bx bx-mail-send'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
 </html>
