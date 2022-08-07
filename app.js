@@ -51,6 +51,21 @@ function iteraCode(txt){
     return t;
 }
 
+function iteraDeCode(txt){
+    txt = entrada.value.toLowerCase();
+    return txt.replace(/ai|enter|imes|ober|ufat/gi, function(matched){
+        switch(matched) {
+            case 'ai': return 'a'
+            case 'enter': return 'e'
+            case 'imes': return 'i'
+            case 'ober': return 'o'
+            case 'ufat': return 'u'
+            case ' ': return ''
+            default: return matched
+        }
+    });
+}
+
 botonEncriptar.addEventListener('click', function() {
     var txt = entrada.value;
     if(txt.length === 0) {
@@ -76,7 +91,7 @@ botonDesencriptar.addEventListener('click', function() {
         salida.nodeValue= ''
         ocultarRes();
     } else {
-        salida.nodeValue = valor;
+        salida.nodeValue = iteraDeCode(valor);
         mostrarRes();
     }
     
