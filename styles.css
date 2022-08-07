@@ -49,7 +49,8 @@
   
   textarea {
     resize: none;
-    width: 90vw;
+    width: 65vw;
+    align-items: center;
   }
   
   html {
@@ -186,13 +187,12 @@
   }
   
   .barra-lateral .button {
-    position: absolute;
     visibility: hidden;
     top: 35rem;
     right: 1.5rem;
     border-radius: 1.5rem;
     padding: 0.5rem;
-    width: 200px;
+    width: 170px;
     height: 50px;
     font-size: 14px;
   }
@@ -275,10 +275,6 @@
     .barra-lateral {
       width: 30%;
     }
-
-    .foot{
-        width: 100%;
-    }
   
     body {
       height: 100vh;
@@ -292,7 +288,7 @@
     padding: 0.1rem;
     background: #E5E5E5;
     border-top: 1px solid #0A3871;
-    top: 700px;
+    top: 730px;
     }
 
     footer > p {
