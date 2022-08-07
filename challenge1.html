@@ -10,6 +10,10 @@
         <div class="principal d-flex flex-column">
             <header>
         <img class="logo" src="./assets/Vectorlogo.png" alt="alura-logo" />
+        <label class="toggle">
+            <input type="checkbox" onclick="toggleDarkLight()">
+            <span class="slider round"></span>
+        </label>
             </header>
             <div>
                 <textarea id="entrada" class="flex-grow" placeholder="Inserte el texto aqui"></textarea>
@@ -35,7 +39,7 @@
                 </div>
             </div>
             <div id="salida"></div>
-            <input id="limpiar" type="button" class="button copiar" onclick="" value="Copiar" />
+            <button id="limpiar" type="button" class="button copiar" onclick="" value="Copiar">Copiar</button>
         </div>
         <script src="./app.js"></script>
     </body>

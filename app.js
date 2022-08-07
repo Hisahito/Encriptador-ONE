@@ -4,6 +4,20 @@ var botonDesencriptar = document.querySelector('#desencriptar');
 var barra = document.querySelector('.barra-lateral');
 var botonLimpiar = document.querySelector('#limpiar');
 var salida
+var conta = 0;
+
+function toggleDarkLight() {
+    var element = document.body;
+    var element1 = document.querySelector('.foot');
+    element.classList.toggle("dark-mode");
+    conta++;
+    if(conta === 2){
+        conta = 0;
+    } else{
+        conta = 1;
+    }
+    conta === 1 ? element1.classList.add("dark-mode") : element1.classList.remove("dark-mode");   
+}
 
 function laSalida() {
     const elem = document.querySelector('#salida');

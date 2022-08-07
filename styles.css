@@ -49,6 +49,7 @@
   
   textarea {
     resize: none;
+    width: 90vw;
   }
   
   html {
@@ -187,10 +188,13 @@
   .barra-lateral .button {
     position: absolute;
     visibility: hidden;
-    top: 0.5rem;
-    right: 0.5rem;
-    border-radius: 0.5rem;
+    top: 35rem;
+    right: 1.5rem;
+    border-radius: 1.5rem;
     padding: 0.5rem;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
   }
   
   .barra-lateral.con-salida .button {
@@ -295,4 +299,72 @@
     margin: 0.3rem;
     font-size: 12px;
     font-family: 'Inter', sans-serif;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: white;
+    }
+
+    input:checked + .slider:before {
+      background-color: #000;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .toggle{
+      position: absolute;
+      display: inline-block;
+      width: 40px;
+      height: 14px;
+      top: 80px;
+      left: 12px;
+    }
+
+    .dark-mode{
+      background: black;
+      color: #fff
+    }
+
+    .toggle input{
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 5;
+      right: 5;
+      bottom: 0;
+      background-color: black;
+      -webkit-transition: .4s;
+      transition: .4s;
     }
