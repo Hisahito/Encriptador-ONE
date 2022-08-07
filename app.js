@@ -5,6 +5,7 @@ var barra = document.querySelector('.barra-lateral');
 var botonLimpiar = document.querySelector('#limpiar');
 var salida
 var conta = 0;
+entrada.focus();
 
 function toggleDarkLight() {
     var element = document.body;
@@ -42,7 +43,7 @@ function codificador(item){
 }
 
 function iteraCode(txt){
-    txt = entrada.value;
+    txt = entrada.value.toLowerCase();
     var t = '';
     for(var i = 0; i < txt.length; i++) {
         t += codificador(txt[i]);
@@ -56,7 +57,7 @@ botonEncriptar.addEventListener('click', function() {
         salida.nodeValue = ''
         ocultarRes();
     } else {
-        salida.nodeValue = iteraCode(txt);
+        salida.nodeValue = iteraCode(txt).toLowerCase();
         mostrarRes();
     }
 });
@@ -68,3 +69,24 @@ function mostrarRes(){
 function ocultarRes(){
     barra.classList.remove('con-salida');
 }
+
+botonDesencriptar.addEventListener('click', function() {
+    var valor = entrada.value;
+    if(valor.length === 0) {
+        salida.nodeValue= ''
+        ocultarRes();
+    } else {
+        salida.nodeValue = valor;
+        mostrarRes();
+    }
+    
+}); 
+
+entrada.addEventListener('input', function() {
+    var valor = entrada.value;
+    if(valor.length === 0) {
+        salida.nodeValue= ''
+        ocultarRes();
+    }
+
+});
