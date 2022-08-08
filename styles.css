@@ -140,6 +140,7 @@
     padding: 1rem;
     margin: 0.5rem 0px;
     cursor: pointer;
+    
   }
   
   button.button:hover,
@@ -343,7 +344,7 @@
     }
 
     .dark-mode{
-      background: black;
+      background: #192229;
       color: #fff
     }
 
@@ -363,4 +364,20 @@
       background-color: black;
       -webkit-transition: .4s;
       transition: .4s;
+    }
+
+    .animation{
+      animation: floating 6s infinite ease-in-out;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(40px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
     }
