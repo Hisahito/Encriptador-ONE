@@ -381,3 +381,13 @@
         transform: translatey(0px);
       }
     }
+
+    @font-face {
+      font-family:  'Inter';
+      src: url('./fonts/Inter-Light.ttf')
+    }
+    
+    @font-face {
+      font-family:  'Inter';
+      src: url('./fonts/Inter-Bold.ttf')
+    }
