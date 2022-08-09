@@ -4,7 +4,7 @@ About this challenge:
 Acerca de este reto:
 ---
 The challenge is to work in a aplication that encrypt text, so users can send messages to each other without fear of being intercepted.
-With a responsive design in HTML, CSS & JavaScript.
+With a responsive design in HTML, CSS & JavaScript.<br>
 el reto es trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 Con diseño Responsivo, HTML, CSS y JavaScript.  
 
