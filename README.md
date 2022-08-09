@@ -56,10 +56,12 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 You can visit and try the site here: <br>
 Usted puede visitar y probar el sitio aquí: <br>
+---
 https://hisahito.github.io/Encriptador-ONE/
 
 
 Insignia:
+---
 
 ![insignia 1](https://user-images.githubusercontent.com/83984969/183712662-ba574cb8-4870-4329-8e5e-b8d15de2eb41.png)
 
