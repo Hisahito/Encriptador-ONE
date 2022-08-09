@@ -391,3 +391,37 @@
       font-family:  'Inter';
       src: url('./fonts/Inter-Bold.ttf')
     }
+
+    .copy-text button:before {
+      content: "Copiado";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: #5c81dc;
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+    }
+
+    .copy-text button:after{
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      width: 10px;
+      height: 10px;
+      background: #5c81dc;
+      transform: rotate(45deg);
+      display: none;
+    }
+
+    .copy-text.active button:before,
+    .copy-text.active button:after{
+      display: block;
+    }
+
+    .fa-circle-check{
+      color: black;
+      font-size: 16px;
+    }

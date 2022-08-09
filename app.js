@@ -2,7 +2,8 @@ var entrada = document.querySelector('#entrada');
 var botonEncriptar = document.querySelector('#encriptar');
 var botonDesencriptar = document.querySelector('#desencriptar');
 var barra = document.querySelector('.barra-lateral');
-var botonLimpiar = document.querySelector('#limpiar');
+var clipboard = document.querySelector('.copiar');
+var copyText = document.querySelector('.copy-text');
 var salida
 var conta = 0;
 entrada.focus();
@@ -105,3 +106,16 @@ entrada.addEventListener('input', function() {
     }
 
 });
+
+var clip = navigator.clipboard;
+
+clipboard.addEventListener('click', function(){
+    var input = salida.nodeValue;
+    if(clip){
+        clip.writeText(input);
+        copyText.classList.add('active');
+        setTimeout(function(){
+            copyText.classList.remove('active');
+        }, 2000);
+    }
+})
