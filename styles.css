@@ -173,7 +173,7 @@
     width: 1rem;
     height: 1rem;
     display: inline-block;
-    background: url('../assets/Vector.png');
+    background: url('./assets/Vector.png');
     margin: 0px 0.5rem;
   }
   
@@ -390,12 +390,12 @@
 
     @font-face {
       font-family:  'Inter';
-      src: url('../fonts/Inter-Light.ttf')
+      src: url('./fonts/Inter-Light.ttf')
     }
     
     @font-face {
       font-family:  'Inter';
-      src: url('../fonts/Inter-Bold.ttf')
+      src: url('./fonts/Inter-Bold.ttf')
     }
 
     .copy-text button:before {
