@@ -8,6 +8,9 @@ With a responsive design in HTML, CSS & JavaScript.<br>
 el reto es trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 Con diseño Responsivo, HTML, CSS y JavaScript.  
 
+<img width="1438" alt="Captura de Pantalla 2022-08-09 a la(s) 1 24 07" src="https://user-images.githubusercontent.com/83984969/183579128-54f5ac6d-40d9-49cf-8772-5e251f8d54af.png">
+
+
 Encryption Key:
 Clave de encriptacion:
 ---
